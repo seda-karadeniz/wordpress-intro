@@ -38,7 +38,7 @@
                 <?php /* $trips = dw_get_trips(3);*/?>
                 <?php if (($trips= dw_get_trips(3))->have_posts()): while($trips->have_posts()): $trips->the_post(); ?>
                 <article class="trip">
-                    <a href="<?= get_the_permalink(); ?>" class="trip__link"> lire le recit de voyage "titre"</a>
+                    <a href="<?= get_the_permalink(); ?>" class="trip__link"> lire le recit de voyage <?= get_the_title(); ?></a>
                     <div class="trip__card">
                         <header class="trip__head">
                             <h3 class="trip__title"><?= get_the_title(); ?></h3>

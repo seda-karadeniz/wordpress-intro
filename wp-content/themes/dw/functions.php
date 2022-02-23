@@ -17,7 +17,8 @@ register_post_type('trips', [
     'public' => true,
     'menu_position' => 5,
     'menu_icon' => 'dashicons-palmtree',
-    'supports' => ['title','editor' ,'thumbnail']
+    'supports' => ['title','editor' ,'thumbnail'],
+    'rewrite' => ['slug', 'voyage'],
 ]);
 
 function dw_get_trips($count = 20)

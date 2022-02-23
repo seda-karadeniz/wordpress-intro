@@ -6,6 +6,9 @@
         <div class="contact__content">
             <?php the_content();?>
         </div>
+        <div class="contact__form">
+            <?= apply_filters('the_content', '[contact-form-7 id="25" title="Formulaire de contact"]');?>
+        </div>
 
     </main>
 <?php endwhile; endif;?>
